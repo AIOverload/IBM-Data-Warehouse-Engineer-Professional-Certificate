@@ -1,0 +1,51 @@
+Database        : crn:v1:bluemix:public:dashdb-for-transactions:us-south:a/9320e97491e541959e956251cb75fd70:b6645c3b-8ccb-4961-8cc0-de83afe3405f::
+Authorization Id: rwt29113                                                                                                                        
+Run method      : JDBC                                                                                                                            
+Date            : Feb 6, 2024 9:34:44 PM                                                                                                          
+Status          : completed                                                                                                                       
+
+select count(*) from CARSALESTABLE
+
+select max(price) as max_price from CARSALESTABLE
+
+select distinct(model) from CARSALESTABLE
+
+
+
+=======================================================================================
+select count(*) from CARSALESTABLE
+
+Run time (seconds): 0.005    
+Status            : succeeded
+
+1 
+--
+29
+
+
+=======================================================================================
+select max(price) as max_price from CARSALESTABLE
+
+Run time (seconds): 0.005    
+Status            : succeeded
+
+MAX_PRICE
+---------
+    26500
+
+
+=======================================================================================
+select distinct(model) from CARSALESTABLE
+
+Run time (seconds): 0.005    
+Status            : succeeded
+
+MODEL             
+------------------
+Discovery         
+Freelander        
+Range Rover       
+Range Rover Evoque
+Range Rover Sport 
+
+
